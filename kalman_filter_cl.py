@@ -10,6 +10,7 @@ class KalmanFilter:
         self.P = P
         self.x = x
 
+
     def predict(self):
         self.x_pred = self.A @ self.x
         self.P_pred = self.A @ self.P @ self.A.T + self.Q
