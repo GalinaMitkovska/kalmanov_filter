@@ -48,7 +48,6 @@ kalman_positions = []
 
 for i in range(len(measurements)):
 
-    # 1. Предсказване
     predicted_state, _ = kalman.predict()
     predicted_position = predicted_state[:2].flatten()
 
